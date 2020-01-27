@@ -1,8 +1,9 @@
 from finviz.screener import Screener;
 
 
+
 filters = ['exch_nasd', 'fa_PEG_low', 'fa_EPS_high', 'fa_EPS past 5Y_high',]
-stock_list = Screener(filters=filters, order='-EPS')
+stock_list = Screener(filters=filters, order='Volume')
 
 
 print(stock_list)
